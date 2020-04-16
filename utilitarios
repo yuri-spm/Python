@@ -1,0 +1,144 @@
+#veifica se arquivo existe
+def arquivoExiste(nome):
+    try:
+        a = open(nome, 'rt')
+        a.close()
+    except FileNotFoundError:
+        return False
+    else:
+        return True
+
+#criar novo arquivo em txt
+def criarArquivo(nome):
+    try:
+        a = open(nome, 'wt+')
+        a.close()
+    except:
+        print('Houve um erro na criação do arquivo!')
+    else:
+        print(f'Arquivo {nome} criado com sucesso. ')
+
+#ler arquivo
+def lerArquivo(nome):
+    try:
+        a = open(nome, 'rt')
+    except:
+        print('Erro ao ler arquivo!')
+    else:
+        cabecalho('Colaboradores Cadastrados')
+        for linha in a:
+            dado = linha.split(';')
+            dado[1] = dado[1].replace('\n', '')
+            print(f'{dado[0]:<30} Matricula: {dado[1]:>5} ')
+    finally:
+        a.close()
+
+#cadastro nome e matricula
+def cadastrar(arq, nome='desconhecido', matricula =0):
+    try:
+        a = open(arq, 'at')
+    except:
+        print('Houve um erro na abertura de cadastro.')
+    else:
+        try:
+            a.write(f'{nome};{matricula}\n')
+        except:
+            print('Houve um erro na hora de cadastrar os dados.')
+        else:
+            print(f'Novo registro de {nome} adicionado.')
+            a.close()
+
+
+#cadastro de codigo, nome e valor de um produto
+def cadastrarProduto(arq, codigo=0, nome='nulo', valor=0.00):
+    try:
+        a = open(arq, 'at')
+    except:
+        print('Houve um erro na abertura  de cadastro.')
+    else:
+        try:
+            a.write(f'{codigo};{nome};{valor}\n')
+        except:
+            print(f'Houve um erro na hora de cadastrar os dados do(s) produto(s)')
+        else:
+            print(f'Produto {nome} cadastrado com sucesso.')
+            a.close()
+
+
+
+#ler produtos cadastrados
+def lerProdutos(arq):
+    a = open(arq)
+    lista = [linha.strip() for linha in a]
+    a.close()
+
+    for linha in lista:
+        dado = linha.split(';')
+        dado[1] = dado[1].replace('\n', '')
+        print(f'CODIGO: {dado[0]:<10} PRODUTO: \t{dado[1]} \t{dado[2]:>15}')
+
+
+#imprimi linhas
+def imprimeLinha(tam=50):
+    return '-' * 50
+
+
+#verifica se número digitado e inteiro
+def leiaInteiro(msg):
+    while True:
+        try:
+            n= int(input(msg))
+        except (ValueError, TypeError):
+            print('\033[31mErro! Por favor, informe uma das opções!\033[m')
+            continue
+        except (KeyboardInterrupt):
+            print('\033[31mEntradas de dados interrompidas pelo usuário.\033[m')
+            return 0
+        else:
+            return n
+
+
+#verifica se caractere e string
+def leiaString(msg):
+    n = input(msg)
+    if msg.isalnum() == True or msg.isalpha() == True:
+        return print("Erro")
+    else:
+        return n
+
+
+#cabeçalho
+def cabecalho(txt):
+    print(imprimeLinha())
+    print(txt.center(50))
+    print(imprimeLinha())
+
+
+#menu atraves de uma lista
+def menu(lista):
+    cabecalho('MENU PRINCIPAL')
+    c = 1
+    for item in lista:
+        print(f'{c} - {item}')
+        c += 1
+    print(imprimeLinha())
+    opc = leiaInteiro('Sua Opção: ')
+    return opc
+
+
+
+# altera "." para ","
+def moeda(n=0, moeda = 'R$'):
+    return f'{moeda}{n:.2f}'.replace('.', ',')
+
+
+# ler dinheiro aceitando "," no lugar de "."
+def leiaDinheiro(msg):
+    valido = False
+    while not valido:
+        entrada = str(input(msg)).replace(',','.').strip()
+        if entrada.isalpha() or entrada == '':
+            print(f'Erro: \"{entrada}\" é um preço invalido!')
+        else:
+            valido = True
+            return float(entrada)
