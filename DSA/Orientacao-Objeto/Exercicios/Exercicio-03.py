@@ -1,21 +1,21 @@
-# Exercício 2 - Crie uma classe chamada Pessoa() com os atributos: nome, cidade, telefone e e-mail. Use pelo menos 2
-# métodos especiais na sua classe. Crie um objeto da sua classe e faça uma chamada a pelo menos um dos seus métodos
-# especiais
-class Pessoa():
+# Exercício 3 - Crie a classe Smartphone com 2 atributos, tamanho e interface e crie a classe MP3Player com os 
+# atributos capacidade. A classe MP3player deve herdar os atributos da classe Smartphone.
 
-    def __init__(self, nome, cidade, telefone, email):
-        self.nome = nome
-        self.cidade = cidade
-        self.telefone = telefone
-        self.email = email
-        print("Cadastrado com sucesso")
+class smartphone():
+    def __init__(self, tamanho, interface):
+        self.tamanho = tamanho
+        self.interface = interface
+        print('Criado com sucesso')
+    
+class mp3Player(smartphone):
+    def __init__(self, capacidade, corled='verde'):
+        self.capacidade = capacidade
+        self.corled = corled
+        smartphone.__init__(self, tamanho='tela7', interface='led')
+        print('Cadastrado com sucesso')
+    def print_mp3player(self):
+        print(f'Objeto criado {self.tamanho}, {self.corled} e a {self.interface}')
 
-    def print_info(self):
-        print(f'O seu nome e {self.nome}, o local que você mora e {self.cidade}')
-    def __str__(self):
-        return "O usuário " + self.nome + " mora na cidade " + self.cidade
-
-p = Pessoa('Yuri','Rio de Janeiro',212345678,'teste@teste.com')
-p.print_info()
-print(p.telefone)
-str(p)
+aparelho = smartphone('tela9','Amoled')
+aparelho = mp3Player('128 GB', 'Azul')
+aparelho.print_mp3player()
