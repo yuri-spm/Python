@@ -1,5 +1,5 @@
 # Criando uma classe chamada Livro
-class livro():
+class Livro():
     # Este método vai inicializar cada objeto criado a partir desta classe
     # O nome deste método é __init__
     # (self) é uma referência a cada atributo de um objeto criado a partir desta classe
@@ -15,7 +15,7 @@ class livro():
     def imprime(self, titulo, isbn):
         print(f'Este livro {titulo} e {isbn}')
 
-livro2 = livro('A Menina que Roubava Livros', 77886611)
+livro2 = Livro('A Menina que Roubava Livros', 77886611)
 print(livro2.titulo)
 livro2.imprime('A Meninna que Roubava Livros',77886611)
 

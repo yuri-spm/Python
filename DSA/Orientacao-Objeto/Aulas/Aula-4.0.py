@@ -1,5 +1,5 @@
 #Criando a classe aninal - Super-Classe
-class animal():
+class Animal():
     def __init__(self):
         print('Animal criado')
 
@@ -10,9 +10,9 @@ class animal():
         print('Comendo')
 
 #Criando a classe cachorro - Sub-Classe
-class cachorro(animal):
+class cachorro(Animal):
     def __init__(self):
-        animal.__init__(self)
+        Animal.__init__(self)
         print('Objeto cachorro criado')
 
     def identif(self):

@@ -1,5 +1,5 @@
 # Criando a classe Livro
-class livro():
+class Livro():
     def __init__(self, titulo, autor, paginas):
         print("Livro criado")
         self.titulo = titulo
@@ -18,7 +18,7 @@ class livro():
 
 
 
-livro1 = livro('Os Lusíadas', 'Luis de Camões', 8816)
+livro1 = Livro('Os Lusíadas', 'Luis de Camões', 8816)
 print(livro1)
 str(livro1)
 print(len(livro1))

@@ -1,13 +1,13 @@
-class funcionarios:
+class Funcionarios:
     def __init__(self, nome, salario):
         self.nome = nome
         self.salario = salario
 
-    def listFunc(self):
+    def list_func(self):
         print(f'O nome do funcionario é {self.nome} e o seu salário {self.salario}')
 
-func1 = funcionarios('Kleber Santos', 2000)
-func1.listFunc()
+func1 = Funcionarios('Kleber Santos', 2000)
+func1.list_func()
 print('USANDO ATRIBUTOS'.center(30))
 
 print(hasattr(func1,'nome'))

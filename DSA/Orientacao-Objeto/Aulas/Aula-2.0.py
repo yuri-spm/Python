@@ -1,7 +1,7 @@
 #Criando um novo tipo de objeto chamado carro
-class carro(object):
+class Carro(object):
     pass
 
 #Instância do carro
-palio = carro()
+palio = Carro()
 print(type(palio))

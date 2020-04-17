@@ -1,5 +1,5 @@
 #Criando uma classe chamada circulo
-class circulo():
+class Circulo():
     #O valor de po é constante
     pi = 3.14
 
@@ -9,7 +9,7 @@ class circulo():
 
     #Esse método calcula a área. Self utiliza os atributos desde mesmo objeto
     def area(self):
-        return (self.raio * self.raio) * circulo.pi
+        return (self.raio * self.raio) * Circulo.pi
 
     #Método para gerar um novo raio
     def setRaio(self, novo_raio):
@@ -22,11 +22,11 @@ class circulo():
 
 
 #Executando  um método da classe circulo
-circ = circulo()
+circ = Circulo()
 #Resultado da execução
 print(circ.getRaio())
 #Executando o método com parâmetro
-circ1 = circulo(7)
+circ1 = Circulo(7)
 print(circ1.getRaio())
 
 
