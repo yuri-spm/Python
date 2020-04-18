@@ -12,23 +12,6 @@ parece ser mais simples que usar uma matriz 3x3.
 
 """
 
-"""
-
-def qMagico(*n):
-    quadradoM = [[],[],[]]
-    for l in range(0, 3):
-        for c in range(0, 3):
-            quadradoM[l][c] = [l],[c]
-    
-    for l in range(0, 3):
-        for c in range(0,3):
-            print(f'[{quadradoM[l][c]}]', end='')
-            print()
-
-qMagico(0,9,8,7,6,5,4,3,2)
-
-
-"""
 
 def qudradoM():
     matriz = [[0,0,0],[0,0,0],[0,0,0]]
@@ -41,4 +24,4 @@ def qudradoM():
             print(f'[{matriz[l][c]:^5}]', end='')
         print()
 
-resp =qudradoM()
+resp = qudradoM()
