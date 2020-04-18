@@ -1,1 +1,26 @@
-Exercicios em Python resolvidos.
+MATERIAL DE ESTUDOS EM PYTHON
+
+PYTHON BRASIL
+
+ESTRUTURA DE DECISÃO    - INCONPLETO
+ESTRUTURA DE REPETIÇÃO  - INCOMPLETO
+ESTRUTURA SEQUENCIAL    - COMPLETO
+CLASSES                 - INCOMPLETO
+MANIPULACAO DE ARQUIVOS - INCOMPLETO
+STRINGS                 - INCOMPLETO
+LISTAS                  - INCOMPLETO
+PROJETO                 - INCOMPLETO
+
+
+
+CURSO EM VIDEO
+MUNDO 1                 -
+MUNDO 2                 -
+MUNDO 3                 -
+
+
+
+
+DSA
+
+
