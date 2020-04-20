@@ -48,4 +48,5 @@ if 'SIM' in fpagamento:
     print(f'O valor total a pagar e {tkg:.2f}')
 else:
     print(f'O valor total a pagar e {tkg}')
+    
 
