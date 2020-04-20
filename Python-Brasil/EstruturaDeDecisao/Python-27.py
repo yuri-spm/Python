@@ -10,3 +10,27 @@ Uma fruteira está vendendo frutas com a seguinte tabela de preços:
     (em Kg) de morangos e a quantidade (em Kg) de maças adquiridas e escreva o valor a ser pago pelo cliente.
 
 """
+
+tmorangos = int(input('Kg de morangos: '))
+tmaca = int(input('Kg maçã: '))
+tkg = tmorangos + tmaca
+
+if tmorangos <= 5: 
+    vmorango = tmorangos * 2.5
+else:
+    vmorango = tmorangos * 2.2
+
+if tmaca <= 5:    
+    vmaca = tmaca * 2.5
+else:
+    vmaca  = tmaca * 1.5
+
+
+vtotal = vmorango + vmaca
+
+if tkg > 8 or vtotal > 25:
+    vtotal = vtotal * 0.9
+
+
+
+print(f'Valor total : {vtotal}')
