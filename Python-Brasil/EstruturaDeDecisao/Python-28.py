@@ -15,3 +15,36 @@ O Hipermercado Tabajara está com uma promoção de carnes que é imperdível. C
 
 
 """
+print()
+print('HIPERMERCADO TABAJARA'. center(60))
+resp = int(input('TIPOS DE CARNE\n1 - FILE DUPLO \n2 - ALCATRA \n3 - PICANHA \nOPÇÃO: ' ))
+if resp == 1:
+    qkg = float(input('KG: '))
+    if qkg  < 5:
+        tkg = qkg * 4.9
+
+    else:
+        tkg = qkg * 5.8
+
+if resp == 2:
+    qkg = float(input('KG: '))
+    if qkg  < 5:
+        tkg = qkg * 5.9
+
+    else:
+        tkg = qkg * 6.8
+
+if resp == 3:
+    qkg = float(input('KG: '))
+    if qkg  < 5:
+        tkg = qkg * 6.9
+
+    else:
+        tkg = qkg * 7.8
+
+fpagamento = input('Forma de pagamento no cartão da loja [SIM/ NAO]:  ').upper()
+if 'SIM' in fpagamento:
+    tkg = tkg * 0.95
+    print(f'O valor total a pagar e {tkg:.2f}')
+else:
+    print(f'O valor total a pagar e {tkg}')

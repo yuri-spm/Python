@@ -12,3 +12,32 @@ Faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As pergu
 
 
 """
+
+cont = 0
+print('RESPONDA SIM OU NÃO'.center(50))
+resp = input('Telefonou para vitima: ').upper()
+if resp in "SIM":
+    cont+= 1
+resp = input('Esteve no local do crime: ').upper()
+if resp in "SIM":
+    cont+= 1
+resp = input('Nora perto da vitima: ').upper()
+if resp in "SIM":
+    cont+= 1
+resp = input('Devia para vitima: ').upper()
+if resp in "SIM":
+    cont+= 1
+resp = input('Já trabalhou para vitima: ').upper()
+
+
+if resp in "SIM":
+    cont+= 1
+if cont == 2:
+    print('Você e suspeita.') 
+elif cont == 3 or cont == 4:
+    print('Cumplice')
+
+elif cont == 5 :
+    print('Culpada')
+else:
+    print('Inocente')
