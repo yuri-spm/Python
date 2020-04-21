@@ -12,7 +12,10 @@ Faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As pergu
 
 
 """
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8a690647c7dfadec9dde21f72d8b7227561dddd6
 cont = 0
 print('RESPONDA SIM OU NÃO'.center(50))
 resp = input('Telefonou para vitima: ').upper()
@@ -40,4 +43,9 @@ elif cont == 3 or cont == 4:
 elif cont == 5 :
     print('Culpada')
 else:
+<<<<<<< HEAD
     print('Inocente')
+=======
+    print('Inocente')
+    
+>>>>>>> 8a690647c7dfadec9dde21f72d8b7227561dddd6

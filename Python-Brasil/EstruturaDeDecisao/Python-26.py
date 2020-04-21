@@ -12,7 +12,10 @@ Um posto está vendendo combustíveis com a seguinte tabela de descontos:
     pelo cliente sabendo-se que o preço do litro da gasolina é R$ 2,50 o preço do litro do álcool é R$ 1,90.
 """
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8a690647c7dfadec9dde21f72d8b7227561dddd6
 resp = int(input('ESCOLHA: \n1 - Alcool \n2 - Gasolina \nOpção:'))
 
 
