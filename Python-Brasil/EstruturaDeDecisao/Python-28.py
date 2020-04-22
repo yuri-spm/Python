@@ -47,6 +47,10 @@ if 'SIM' in fpagamento:
     tkg = tkg * 0.95
     print(f'O valor total a pagar e {tkg:.2f}')
 else:
+<<<<<<< HEAD
+    print(f'O valor total a pagar e {tkg}')
+=======
     print(f'O valor total a pagar e {tkg}')
     
 
+>>>>>>> 8a690647c7dfadec9dde21f72d8b7227561dddd6
