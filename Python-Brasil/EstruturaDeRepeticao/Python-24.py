@@ -14,4 +14,8 @@ for c in range(0, quant):
     soma +=n
 
 
+<<<<<<< HEAD
 print(f'A media das notas foi {(soma/quant):.1f}')
+=======
+print(f'A media das notas foi {(soma/quant):.1f}')
+>>>>>>> b7be70ec852e411e7c84eba2078c88e7e311f862
