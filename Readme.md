@@ -11,16 +11,6 @@ STRINGS                 - INCOMPLETO
 LISTAS                  - INCOMPLETO
 PROJETO                 - INCOMPLETO
 
-
-
-CURSO EM VIDEO
-MUNDO 1                 -
-MUNDO 2                 -
-MUNDO 3                 -
-
-
-
-
 DSA
 
 
