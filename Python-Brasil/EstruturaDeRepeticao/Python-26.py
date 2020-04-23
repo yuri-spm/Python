@@ -1,16 +1,10 @@
 """
-<<<<<<< HEAD
-Numa eleição existem três candidatos. Faça um programa que peça o número total de eleitores. Peça para cada eleitor votar e ao final mostrar o número de votos de cada candidato.
-"""
-
-
-
-=======
+Numa eleição existem três candidatos. Faça um programa que peça o número total de eleitores.
+ Peça para cada eleitor votar e ao final mostrar o número de votos de cada candidato.
 Numa eleição existem três candidatos. Faça um programa que peça o número total de eleitores. 
 Peça para cada eleitor votar e ao final mostrar o número de votos de cada candidato.
 """
 
->>>>>>> 32ade59e1243ef048b0f708a02fcf42c37b55242
 cantidato1 = 0
 cantidato2 = 0
 cantidado3 = 0
