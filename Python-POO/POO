@@ -1,0 +1,46 @@
+ A resposta curta
+
+    um método de instância conhece sua instância (e, a partir disso, sua classe)
+    um método de classe conhece sua classe
+    um método estático não conhece sua classe ou instância
+
+A resposta longa
+Métodos de classe
+
+Um método de classe é aquele que pertence à classe como um todo. Não requer uma instância. 
+Em vez disso, a classe será enviada automaticamente como o primeiro argumento. Um método de classe é declarado com o decorador @classmethod .
+
+Por exemplo:
+
+class Foo(object):
+    @classmethod
+    def hello(cls):
+        print("hello from %s" % cls.__name__)
+Foo.hello()
+-> "Hello from Foo"
+Foo().hello()
+-> "Hello from Foo"
+
+Métodos de instância
+
+Por outro lado, um método de instância requer uma instância para chamar e não requer decorador. Este é de longe o tipo mais comum de método.
+
+class Foo(object):
+    def hello(self):
+        print("hello from %s" % self.__class__.__name__)
+Foo.hello()
+-> TypeError: hello() missing 1 required positional argument: 'self'
+
+(nota: o acima é com python3; com python2 você terá um erro ligeiramente diferente)
+Métodos estáticos
+
+Um método estático é semelhante a um método de classe, mas não obtém o objeto de classe como um parâmetro automático. 
+É criado usando o decorador @staticmethod .
+
+class Foo(object):
+    @staticmethod
+    def hello(cls):
+        print("hello from %s" % cls.__name__)
+
+Foo.hello()
+-> TypeError: hello() missing 1 required positional argument: 'cls'
