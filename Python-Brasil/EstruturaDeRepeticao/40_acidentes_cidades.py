@@ -13,7 +13,7 @@ for info in cadastro.keys() :
     print(f'{info:>2}\t\t ', end='')
 print()
 
-for k, v in enumerate(cadastro):
+for k, v in enumerate(cidade):
     for n in v.values():
         print(f'{str(n):<15}', end='')
     print()
