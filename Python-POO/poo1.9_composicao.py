@@ -10,6 +10,8 @@ class Cliente:
     def inserir_endereco(self, cidade, estado):
         self.enderecos.append(Endereco(cidade, estado))
     
+    def __del__ (self):
+        print(f'{self.nome} foi APAGADO')
 
     def lista_endereco(self):
         for endereco in self.enderecos:
@@ -22,6 +24,8 @@ class Endereco:
         self.estado = estado
 
 
+    def __del__ (self):
+        print(f'{self.cidade} / {self.estado} foi APAGADO')
 
 
 
@@ -29,6 +33,7 @@ cliente1 = Cliente('Luiz', 32)
 cliente1.inserir_endereco('Belo Horizando', 'MG')
 print(cliente1.nome)
 cliente1.lista_endereco()
+del cliente1
 print()
 
 cliente2 = Cliente('Monica', 32)
@@ -36,3 +41,6 @@ cliente2.inserir_endereco('Rio de Janeiro', 'RJ')
 cliente2.inserir_endereco('São Paulo', 'SP')
 print(cliente2.nome)
 cliente2.lista_endereco()
+
+
+print("#####################################################################")
