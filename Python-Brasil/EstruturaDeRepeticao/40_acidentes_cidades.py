@@ -21,7 +21,6 @@ for c in range(0, 2):
 
 
 print()
-
 for info in cadastro.keys() :
     print(f'{info:>2}\t\t ', end='')
 print()
