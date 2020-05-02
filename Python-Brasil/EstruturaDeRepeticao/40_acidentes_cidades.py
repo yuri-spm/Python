@@ -29,3 +29,8 @@ for k, v in enumerate(cidade):
     print(f' {(n):<20}', end='')
   print()
 print('-=-'*20)
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 5725728212ba807e058137b24bb688981ef489b6
