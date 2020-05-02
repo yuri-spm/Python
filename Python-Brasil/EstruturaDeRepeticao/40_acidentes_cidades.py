@@ -29,8 +29,3 @@ for k, v in enumerate(cidade):
     print(f' {(n):<20}', end='')
   print()
 print('-=-'*20)
-
-for j, l in enumerate(cidade):
-    print(j)
-    for t in l.values():
-        print([l][2])
